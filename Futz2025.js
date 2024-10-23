@@ -1,22 +1,8 @@
 /* ROOM */
 
-const botVersion = "𝙵𝚄𝚃𝚉 𝚟11";
+const botVersion = "𝙵𝚄𝚃𝚉 25";
 const roomName = `3✘ | ${botVersion} | 🏆C̶o̶l̶a̶ ̶n̶a̶ ̶h̶u̶m̶i̶l̶d̶a̶d̶e̶  `;
-/* NOMES SUGERIDOS:
-1: 🏆 3x3 Futsal ⚽ | Cola na humildade
-2: 🏆 SABOT | ⚽ 3x3 Futsal ⚽ | Cola na humildade
-3: 🏆 FuteLab | ⚽ Futsal ⚽ | Cola na humildade
-4: 🎯 SABOT | ⚽ Futsal ⚽ | Cola na humildade
-5: 🎯 saBOT | ⚽ Futsal ⚽ | 3x3 | Cola na humildade
-6: 🎯 FuteLab | ⚽ Futsal ⚽ | 3x3 | Cola na humildade
-7: 🎯 Futsal ⚽ 3x3 🏆 | Cola na humildade
-8: 🎯 Cola na humildade | ⚽ Futsal 3x3 🏆
-9: ⚽ FutZ 3x3 🏆 | Cola na humildade 🎯
-10: 𝟯✘𝟯 | ⚽ 🅵🆄🆃🆉 🏆 | ᶜᵒˡᵃ ⁿᵃ ʰᵘᵐⁱˡᵈᵃᵈᵉ 🎯
-11: 𝟯✘𝟯 | ⚽ 🅵🆄🆃🆉 🏆 | 𝐂𝐨𝐥𝐚 𝐧𝐚 𝐡𝐮𝐦𝐢𝐥𝐝𝐚𝐝𝐞 🎯
-12. 𝟯✘𝟯 | ${botVersion} | ᶜᵒˡᵃ ⁿᵃ ʰᵘᵐⁱˡᵈᵃᵈᵉ 🎯
-*/
-const botName = "🏁 Áʀʙɪᴛʀᴏ ʙᴏᴛ 🤖";
+const botName = "🏁 Áʀʙɪᴛʀᴏ 🤖 𝐍𝐏𝐂";
 let linkinho = "";
 const maxPlayers = 20;
 var roomPublic = true;
@@ -2514,22 +2500,6 @@ function loadMap(map, scoreLim, timeLim) {
     room.setScoreLimit(scoreLim);
     room.setTimeLimit(timeLim);
 }
-function stadiumVote() {
-    // Verifica qual estádio tem mais votos
-    if (forspeedx > fordark && forspeedx > foruseless) {
-        votedS = mediumStadium; // Estádio com mais votos: speedx
-    }
-    else if (fordark > forspeedx && fordark > foruseless) {
-        votedS = mediumdark; // Estádio com mais votos: dark
-    }
-    else if (foruseless > forspeedx && foruseless > fordark) {
-        votedS = medium2; // Estádio com mais votos: useless
-    }
-    else {
-        randstadiumsfor3x = Math.floor(Math.random() * allmediumstadiums.length);
-        votedS = allmediumstadiums[randstadiumsfor3x]; // Empate ou mais de um estádio com votos máximos
-    }
-};
 function checkTeamSizeAndChangeMap() {
     stadiumVote();
     if (teamR.length === 1 && teamB.length === 1) {
@@ -2782,8 +2752,8 @@ let bluep3 = "";
 let soberboID = "";
 let badassID = "";
 var supervisorsID = [];
-const soberbo = ['3137392E33342E38362E3530']; // soberbo
-const badass = ['3137392E39332E34332E323239']; // malco
+const soberbo = ['3137392E33342E38362E3530', 'soberbo']; // soberbo
+const badass = ['3135322E36372E35332E313334', '𝐍𝐢𝐤𝐨', '𝐌𝐚𝐥𝐜𝐨']; // malco ou niko
 const supervisors = ['3138392E342E38382E313230']; // 𝕃 . 𝕄𝕖𝕤𝕤𝕚™
 const blacklistnames = ['^_-'];
 const blacklistconn = [
@@ -2838,7 +2808,7 @@ let rr = false; // serve para restartar o game com o comnado rr
 
 let forbid = ['macaco', 'adolf hitler', 'nazismo', 'cuzao', 'cuzão', 'autista', 'cu', 'hitler', 'Manco', 'Malco', 'manco', 'malco', 'Macaco', 'Hitler', 'mancos', 'Mancos', "Pênis", 'porra', 'Porra'];
 let trava = ["㧫璧 觭䢜潇ကᩨ쀡ఈ泄찉넾﫤㏭ 緺", "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓", "㧫", "璧", "懈౩䊀脁潡䣚⾤㸼짠ब", "뗲᭾ 띀急蔹⹉ꆣせㆉ였鷀Ú錘陈搳窇㉕"];
-let regex = ["fdp", "cu", "carai", "cuzao", "porra", "arrombado", "cu preto", "lixo", "autista", "lixeira", "verme", "Horrível", "seu merda", "filho da puta", "vsfd",
+let regex = ["karai","karalho", "fdp", "cu", "carai", "cuzao", "porra", "arrombado", "cu preto", "lixo", "autista", "lixeira", "verme", "Horrível", "seu merda", "filho da puta", "vsfd",
 "caralho", "seu gordo", "cuzão", "vadia", "sua mãe", "seu fdp", "cala a boca", "puta", "fudido", "krl", "f d p", "vtnc", "vai tomar no cu", "crl", "cadeirante", "caderante",
 "nigga", "prr", "CARALHO", "PORRA", "CARAI", "CUZAO", "CUZÃO", "FDP", "FILHO DA PUTA", "Cu", "CU", "CÚ", "PORR", "porr", "PRRA", "fodido", "FODIDO", "CRALHO", "CARLHO", "poha",
 "prr" , "PRR", "POHA", "bct", "BCT"];
@@ -2930,13 +2900,7 @@ var Intervalo_4 = 1000 * 60 * 4;
 var Intervalo_20 = 1000 * 60 * 20;
 
 Intervalo_mensagens = setInterval(() => {
-const msgs1 = ["▒█▀▀▄ ▀█▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▄"];
-const msgs2 = ["▒█░▒█ ▒█░ ░▀▀▀▄▄ ▒█░░░ ▒█░░▒█ ▒█▄▄▀ ▒█░▒█"];
-const msgs3 = ["▒█▄▄▀ ▄█▄ ▒█▄▄▄█ ▒█▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█▄▄▀"];
-const msgs4 = ["https://discord.gg/AR7ypuzJG8"];
-room.sendAnnouncement(centerText(msgs1), null, white, "bold", 0);
-room.sendAnnouncement(centerText(msgs2), null, white, "bold", 0);
-room.sendAnnouncement(centerText(msgs3), null, white, "bold", 0);
+const msgs4 = ["https://discord.gg/VEzEhqUUhQ"];
 room.sendAnnouncement(centerText(msgs4), null, white, "italic", 1);
 }, Intervalo_15);
 
@@ -3453,7 +3417,6 @@ function sendAdminCommandsToDiscord(message) {
     };
     request.send(JSON.stringify(params));
 };
-
 
 /* FUNCTIONS */
 
@@ -4699,14 +4662,48 @@ room.onPlayerJoin = function (player) {
         "👋 Salve, " + player.name + "!",
         "👋 Eae, " + player.name + "!",
     ];
-    if(badass.includes(player.conn)) {
+    var conn = player.conn
+    var ipv4 = conn.match(/.{1,2}/g).map(function(v){
+    return String.fromCharCode(parseInt(v, 16));
+    }).join('');
+    sendAnnouncementToDiscord("```"+"**📝Informações do jogador, conn, auth, IP e data ⏰**" + "\n" + "🛸 **Nick:** " + player.name +"\n" + 
+    "🌐 **Conn:** " + player.conn + "\n" + "🔥 **Auth:** "+ player.auth + "\n" + "🌏 **Ipv4:** " + (ipv4) + "\n" + "📅 **Data:** " + `${getDateInfo()}` +"```");
+    var randomIndex = Math.floor(Math.random() * messages.length);
+    var announcement = messages[randomIndex];
+    updateTeams();
+    updateAdmins();
+    setTimeout(() => { alwaysOnTeam(); }, 200);
+    setTimeout(function () {
+        alwaysOnTeam();
+        IIIx();
+    }, 1000);
+    room.sendAnnouncement(centerText(announcement), null, white, "bold");
+    if(badass.includes(player.name)) {
         room.setPlayerAdmin(player.id, true);
         badassID = player.id;
-        room.sendAnnouncement(centerText("O DONO da sala entrou!"), null, green, "bold"); 
-    } if(soberbo.includes(player.conn)) {
+        var badmessages = [
+            "O PAI chegou, rapa!",
+            "O DONO ta aí, agora da jogo!",
+            "No Diddy, Fam... Daddy is on!",
+            "Niko ta on... Parou as gracinhas",
+            "Opa, já pega seu admin aí chefe..."
+        ];
+        var randomIndex = Math.floor(Math.random() * messages.length);
+        var announcement = badmessages[randomIndex];
+        room.sendAnnouncement(centerText(announcement), null, green, "bold");
+    } if(soberbo.includes(player.name)) {
         room.setPlayerAdmin(player.id, true);
         soberboID = player.id;
-        room.sendAnnouncement(centerText("Saúdem o Soberano " + player.name + "!"), null, green, "bold"); 
+        var sobmessages = [
+            "Sobeeerbo!",
+            "Sobeeerbo, chega maais!!",
+            "A Soberania se faz presente, fam!",
+            "Soberba ta on... Acabou as gracinhas",
+            "Ae, já é admin Suburbio do Protagonismo..."
+        ];
+        var randomIndex = Math.floor(Math.random() * messages.length);
+        var announcement = sobmessages[randomIndex];
+        room.sendAnnouncement(centerText(announcement), null, green, "bold"); 
     } if(supervisors.includes(player.conn)) {
         supervisorsID.push(player.id);
         lanoche = player.id;
@@ -4729,22 +4726,6 @@ room.onPlayerJoin = function (player) {
             room.sendAnnouncement(centerText("SUJEITO À BAN temporário"), player.id, warn, "normal");
         }, 1000);
     }
-    var conn = player.conn
-    var ipv4 = conn.match(/.{1,2}/g).map(function(v){
-    return String.fromCharCode(parseInt(v, 16));
-    }).join('');
-    sendAnnouncementToDiscord("```"+"**📝Informações do jogador, conn, auth, IP e data ⏰**" + "\n" + "🛸 **Nick:** " + player.name +"\n" + 
-    "🌐 **Conn:** " + player.conn + "\n" + "🔥 **Auth:** "+ player.auth + "\n" + "🌏 **Ipv4:** " + (ipv4) + "\n" + "📅 **Data:** " + `${getDateInfo()}` +"```");
-    var randomIndex = Math.floor(Math.random() * messages.length);
-    var announcement = messages[randomIndex];
-    updateTeams();
-    updateAdmins();
-    setTimeout(() => { alwaysOnTeam(); }, 200);
-    setTimeout(function () {
-        alwaysOnTeam();
-        IIIx();
-    }, 1000);
-    room.sendAnnouncement(centerText(announcement), null, white, "bold");
     extendedP.push([player.id, player.auth, player.conn, false, 0, 0, false]);
     playerList.push({"object": player, "nome": player.name, "id": player.id});
     extendedP.push([player.id, player.auth, player.conn, false, 0, 0, false]);
@@ -5901,242 +5882,6 @@ room.onPlayerChat = function (player, message) {
         setTimeout(function () {
             room.sendAnnouncement(centerText("🥴 LENDAS 🥴"), null, white, "bold");
         }, 20);
-    } if (["!bar"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 Todo o estádio, é um só clamor 🎵"), null, white, "normal");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎵 Azul-grená ao vento, um grito valente 🎶"), null, white, "normal");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 Temos um nome, que todos conhecem 🎵"), null, white, "normal");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎵 Barça, Barça, Barça! 🎶"), null, white, "normal");
-        }, 3750);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🔵🔴🔵...🔵🔴🔵...🔵🔴🔵"), null, white, "normal");
-        }, 5000);
-    } if (["!rea"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 Já corre a flecha 🎵"), null, white, "normal");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎵 Já ataca o meu Madrid 🎶"), null, white, "normal");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 O grito que aprendi 🎵"), null, white, "normal");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎵 Madrid, Madrid, Madrid 🎶"), null, white, "normal");
-        }, 3750);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("⚪🟡⚪...⚪🟡⚪...⚪🟡⚪"), null, white, "normal");
-        }, 5000);
-    } if (["!malco"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.setPlayerAvatar(player.id, "❌")
-            setTimeout(function () {
-                room.setPlayerAvatar(player.id, "M")
-                room.setPlayerDiscProperties(player.id, {radius: 17, invMass: 30 / 30});
-                setTimeout(function () {
-                    room.setPlayerAvatar(player.id, "A")
-                    setTimeout(function () {
-                        room.setPlayerAvatar(player.id, "L")
-                        setTimeout(function () {
-                            room.setPlayerAvatar(player.id, "C")
-                            setTimeout(function () {
-                                room.setPlayerAvatar(player.id, "O")
-                                setTimeout(function () {
-                                    room.setPlayerAvatar(player.id, "❌")
-                                    setTimeout(function () {
-                                        room.setPlayerAvatar(player.id, null)
-                                        room.setPlayerDiscProperties(player.id, {radius: 15, invMass:  10 / 30});
-                                    }, 500);
-                                }, 500);
-                            }, 500);
-                        }, 500);
-                    }, 500);
-                }, 500);
-            }, 1000);
-        }, 1);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("❌"), null, white, "normal");
-        }, 10);
-    } if (["!diaz"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Se éres Tarde..."), null, white, "normal");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("UN MITO!"), null, white, "bold");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Se éres Noche..."), null, white, "normal");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("UNA Lenda!"), null, white, "bold");
-        }, 3750);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("𝘿𝙄𝘼𝙕"), null, yellow, "bold");
-        }, 5000);
-    } if (["!soberano", "soberano"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("👑 SOBERANO é rei 👑"), null, white, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("soberbo. soberbo, soberbo"), null, chatInvisble, "normal");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🏙️ SUBURBANO, a lei 🌆"), null, white, "bold");
-        }, 1260);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("soberbo. soberbo, soberbo"), null, chatInvisble, "normal");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("pra qualquer um, não tem"), null, white, "normal");
-        }, 2510);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("soberbo. soberbo, soberbo"), null, chatInvisble, "normal");
-        }, 3750);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("<< Soberania Soberbo >>"), null, yellow, "bold");
-        }, 3760);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("soberbo. soberbo, soberbo"), null, chatInvisble, "normal");
-        }, 5000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🍫 🍫 🍫 🍫 🍫 🍫 🍫"), null, yellow, "bold");
-        }, 5010);
-    } if (["!two"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("one-----------"), null, white, "normal");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("---TWO--------"), null, white, "normal");
-        }, 1000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("------three-----"), null, white, "normal");
-        }, 2000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("----------four"), null, white, "normal");
-        }, 3000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("one-----------"), null, white, "normal");
-        }, 4000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("-<-TWO->------"), null, yellow, "bold");
-        }, 5000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🔥 🔥 🔥 🔥 🔥"), null, yellow, "bold");
-        }, 6000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("TWO TWO TWO TWO TWO"), null, chatInvisble, "bold");
-        }, 7000);
-    } if (["!onlyway"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("ONLY FANS?"), null, yellow, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Não..."), null, yellow, "bold");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("THE..."), null, yellow, "bold");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("...ONLY..."), null, yellow, "bold");
-        }, 3750);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("...WAY!"), null, yellow, "bold");
-        }, 5000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("THEONLYWAY"), null, white, "bold");
-        }, 5000);
-    } if (["!chiq"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Chiquinho ... 😈 ... Chiquinho"), null, yellow, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("😈 CHIQUIN DA PENHA 😈"), null, yellow, "bold");
-        }, 1250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Chiquinho ... 😈 ... Chiquinho"), null, yellow, "bold");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("😈 CHIQUIN DA PENHA 😈"), null, yellow, "bold");
-        }, 3750);
-    } if (["!smith"].includes(message[0].toLowerCase())) {
-        room.sendAnnouncement(centerText("eu sou a LENDA!"), null, yellow, "bold");
-        room.sendAnnouncement(centerText("by " + player.name), null, white, "italic");
-    } if (["!messi"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Messi, Messi, messi!"), null, white, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Ankara, Messi"), null, white, "bold");
-        }, 1500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Ankara, Messi"), null, white, "bold");
-        }, 3500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Gol, gol, gol!!!"), null, white, "bold");
-        }, 6000);
-    } if (["!mess"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("de cobertura!!"), null, yellow, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("📢 SHOOOOW!! 🎯"), null, white, "bold");
-        }, 1000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("📢 SHOOOOW!! 🎯"), null, lightgrey, "bold");
-        }, 1500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("👽🪐 ELE NÃO É DESSE PLANETA, MESMO🪐👽"), null, white, "bold");
-        }, 2000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("𝕃 . 𝕄𝕖𝕤𝕤𝕚™"), null, indigo, "bold");
-        }, 3000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("𝕃 . 𝕄𝕖𝕤𝕤𝕚™"), null, lightgrey, "bold");
-        }, 3500);
-    } if (["!abob"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Abobrinha, que nunca falha..."), null, white, "bold");
-        }, 10);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Abobrinha, atacante de raça..."), null, white, "bold");
-        }, 2000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("Abobrinha que canta e vibraaaaa!"), null, white, "bold");
-        }, 4000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("ABOBRINHA, THE GOAT"), null, yellow, "bold");
-        }, 6000);
-    } if (["!noob"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 Olê, olê, olê, olê! 🎶" ), c, white, "normal");
-        }, 50);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🎶 é o NooB! 🎶" ), null, white, "normal");
-        }, 2500);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("o NooB MaSteR!!" ), null, white, "bold");
-        }, 4000);
-    } if (["!pepe"].includes(message[0].toLowerCase())) {
-        room.sendAnnouncement(centerText("PÊEEPÊ NELES!"), null, white, "bold");
-    } if (["!soberbo"].includes(message[0].toLowerCase())) {
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🍫"), null, white, "normal");
-        }, 25);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🍫...🍫"), null, white, "normal");
-        }, 1000);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🍫...🍫...🍫"), null, white, "normal");
-        }, 2250);
-        setTimeout(function () {
-            room.sendAnnouncement(centerText("🍫... SOBEEEERBOOOOOOO! ...🍫"), null, white, "normal");
-        }, 3500);
     } if (["var"].includes(message[0].toLowerCase())) {
         room.sendAnnouncement(centerText(player.name + " chamou o VAR"), null, yellow, "normal");
         setTimeout(function () {
@@ -6234,45 +5979,6 @@ room.onPlayerChat = function (player, message) {
         return false;
     } if (["!verdade"].includes(message[0].toLowerCase())) {
         room.sendAnnouncement(centerText(player.name + " é ruim pra caramba!"), null, yellow, "bold");
-    } if (["!sedex", "sedex", "!carteiro", "!correios", "carteiro", "correios"].includes(message[0].toLowerCase())) {
-        function repeatAction(action, times) {
-            for (var i = 0; i < times; i++) {
-                action(); // Executa a ação
-            }
-        }
-        function blank() {
-            room.sendAnnouncement(" ", null, white, "normal", 0);
-        }
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement("                                        🚚", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 10);
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement("                                     🚚💨_", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 300);
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement("                           🚚_-__𝐒𝐄𝐃𝐄𝐗__-_", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 600);
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement("                 🚚_-__𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-_", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 900);
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement("       🚚_-__𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-_", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 1200);
-        setTimeout(function () {
-        repeatAction(blank, 10);
-        room.sendAnnouncement(" 🚚𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-__𝐒𝐄𝐃𝐄𝐗__-_", null, white, "normal", 0);
-        repeatAction(blank, 2);
-        }, 1500);
     } if (["!admin", "adm", "admin"].includes(message[0].toLowerCase())) {
         if (message[1] == adminPassword) {
             room.setPlayerAdmin(player.id, true);
@@ -6949,6 +6655,7 @@ room.onPlayerChat = function (player, message) {
         setTimeout(function () {
             room.sendAnnouncement(centerText(announcement), null, white, "bold");
         }, 600);
+        room.setPlayerDiscProperties(player.id, {radius: 12, invMass: 30 / 30});
     } if (["!mute", "mute"].includes(message[0].toLowerCase())) {
         if (player.admin) {
             if (message[1][0] == `@`) {
@@ -10677,25 +10384,10 @@ room.onGameStart = function (byPlayer) {
         assistsRp3 = 0;
         scorer = 0;
         scoreb = 0;
-        r1vote = false;
-        r2vote = false;
-        r3vote = false;
-        b1vote = false;
-        b2vote = false;
-        b3vote = false;
-        forspeedx = 0;
-        fordark = 0;
-        foruseless = 0;
     }, 1000);
 };
 
 room.onGameStop = function (byPlayer) {
-    r1vote = true;
-    r2vote = true;
-    r3vote = true;
-    b1vote = true;
-    b2vote = true;
-    b3vote = true;
     muteList = [];
     if (byPlayer && byPlayer.id == 0) {
         if (rr == false) {
